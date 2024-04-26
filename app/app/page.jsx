@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Info from "@/components/Info";
 import Image from "next/image";
@@ -8,6 +9,7 @@ export default function Home() {
 
       <Hero heading="placeholder heading" message="placeholder msg" />
       <Info />
+      <Footer />
     </div>
   );
 }

@@ -122,32 +122,32 @@ const Navbar = () => {
                               <div className='py-4 flex flex-col'>
                                     <ul className='uppercase'>
                                           <Link href='/'>
-                                                <li onClick={() => setNav(false)} className='py-4 text-sm'>
+                                                <li onClick={() => setNav(false)} className='py-4 text-sm hover:underline'>
                                                       Home
                                                 </li>
                                           </Link>
                                           <Link href='/#about'>
-                                                <li onClick={() => setNav(false)} className='py-4 text-sm'>
+                                                <li onClick={() => setNav(false)} className='py-4 text-sm hover:underline'>
                                                       About
                                                 </li>
                                           </Link>
                                           <Link href='/#skills'>
-                                                <li onClick={() => setNav(false)} className='py-4 text-sm'>
+                                                <li onClick={() => setNav(false)} className='py-4 text-sm hover:underline'>
                                                       Skills
                                                 </li>
                                           </Link>
                                           <Link href='/#projects'>
-                                                <li onClick={() => setNav(false)} className='py-4 text-sm'>
+                                                <li onClick={() => setNav(false)} className='py-4 text-sm hover:underline'>
                                                       Projects
                                                 </li>
                                           </Link>
                                           <Link href='/resume'>
-                                                <li onClick={() => setNav(false)} className='py-4 text-sm'>
+                                                <li onClick={() => setNav(false)} className='py-4 text-sm hover:underline'>
                                                       Resume
                                                 </li>
                                           </Link>
                                           <Link href='/#contact'>
-                                                <li onClick={() => setNav(false)} className='py-4 text-sm'>
+                                                <li onClick={() => setNav(false)} className='py-4 text-sm hover:underline'>
                                                       Contact
                                                 </li>
                                           </Link>
@@ -196,7 +196,7 @@ const Navbar = () => {
                               </div>
                         </div>
                   </div>
-            </div>
+            </div >
       );
 };
 

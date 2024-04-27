@@ -1,3 +1,4 @@
+import AboutUS from "@/components/AboutUS";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Info from "@/components/Info";
@@ -8,6 +9,7 @@ export default function Home() {
     <div>
 
       <Hero heading="placeholder heading" message="placeholder msg" />
+      <AboutUS />
       <Info />
       <Footer />
     </div>

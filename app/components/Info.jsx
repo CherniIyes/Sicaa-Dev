@@ -3,7 +3,7 @@ import lap from "../public/laptop.png"
 import debug1 from "../public/debug1.png"
 import debug2 from "../public/debug2.png"
 import debug3 from "../public/debug3.png"
-import sbo3 from "../public/sbo3.png"
+import a from "../public/a.jpg"
 import Image from 'next/image';
 const Info = () => {
       const workInfoData = [
@@ -18,7 +18,7 @@ const Info = () => {
                   text: "placeholder ",
             },
             {
-                  image: sbo3,
+                  image: a,
                   title: "placeholder",
                   text: "placeholder ",
             },

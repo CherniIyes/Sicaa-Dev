@@ -21,10 +21,7 @@ const Footer = () => {
                                           <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase cursor-default">Resources</h2>
                                           <ul class="text-gray-700 dark:text-gray-700 font-medium">
                                                 <li class="mb-4">
-                                                      <a href="/" class="hover:underline">Flowbite</a>
-                                                </li>
-                                                <li>
-                                                      <a href="/" class="hover:underline">Tailwind CSS</a>
+                                                <a href="/" class="hover:underline">Tailwind CSS</a>
                                                 </li>
                                           </ul>
                                     </div>

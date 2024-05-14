@@ -1,17 +1,23 @@
-import AboutUS from "@/components/AboutUS";
-import Footer from "@/components/Footer";
-import Hero from "@/components/Hero";
-import Info from "@/components/Info";
-import Image from "next/image";
+import React from 'react';
+import Hero from '@/components/Hero';
+import AboutUs from '@/components/AboutUs';
+import Info from '@/components/Info';
+import Projects from '@/components/Projects';
+import Footer from '@/components/Footer';
+import ResumeButton from '@/components/Resume'; // Import ResumeButton component
 
-export default function Home() {
+const Home = () => {
   return (
     <div>
-
       <Hero heading="placeholder heading" message="placeholder msg" />
-      <AboutUS />
+      <AboutUs />
       <Info />
+      <Projects />
+      <ResumeButton />
       <Footer />
+      {/* Include ResumeButton component here */}
     </div>
   );
-}
+};
+
+export default Home;

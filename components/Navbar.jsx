@@ -4,8 +4,8 @@ import React, { useState, useEffect } from 'react';
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from 'react-icons/ai';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
-
-
+import Image from 'next/image';
+import sicca  from "../public/sicca.png";
 
 const Navbar = () => {
       const [nav, setNav] = useState(false);
@@ -38,18 +38,27 @@ const Navbar = () => {
 
 
                   <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
+                  <Image className='max-h-52 max-w-52' src={sicca} />  
                         <Link href='/'>
+                     
                               <h1 style={{ color: `${textColor}` }} className='font-bold text-4xl'>
+               
                                     SicaaDev
                               </h1>
+                             
                         </Link>
+                      
+                    
+                                      
+                                    
                         <div>
+                       
                               <ul style={{ color: `${textColor}` }} className='hidden md:flex'>
                                     <li className='ml-10 text-sm uppercase hover:border-b'>
                                           <Link href='/'>Home</Link>
                                     </li>
                                     <li className='ml-10 text-sm uppercase hover:border-b'>
-                                          <Link href='/#about'>About</Link>
+                                          <Link href='/#aboutUS'>About</Link>
                                     </li>
                                     <li className='ml-10 text-sm uppercase hover:border-b'>
                                           <Link href='/#skills'>Skills</Link>
@@ -58,7 +67,7 @@ const Navbar = () => {
                                           <Link href='/#projects'>Projects</Link>
                                     </li>
                                     <li className='ml-10 text-sm uppercase hover:border-b'>
-                                          <Link href='/#Resume'>Resume</Link>
+                                          <Link href='/#Resume'>Certificate</Link>
                                     </li>
                                     <li className='ml-10 text-sm uppercase hover:border-b'>
                                           <Link href='/#contact'>Contact</Link>

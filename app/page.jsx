@@ -13,7 +13,9 @@ const Home = () => {
       <AboutUs />
       <Info />
       <Projects />
+     
       <ResumeButton />
+  
       <Footer />
       {/* Include ResumeButton component here */}
     </div>

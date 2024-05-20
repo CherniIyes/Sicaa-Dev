@@ -160,7 +160,7 @@ const Navbar = () => {
                                     )}
                               </div>
                         </div>
-                        </div>
+                  </div>
 
 
 
@@ -169,7 +169,7 @@ const Navbar = () => {
 
 
 
-                        {/* <div className="md:hidden">
+                  {/* <div className="md:hidden">
                               <button
                                     className="w-10 h-8 flex flex-col justify-between z-50 relative"
                                     onClick={() => setNav((prev) => !prev)}
@@ -220,9 +220,9 @@ const Navbar = () => {
 
 
 
-                        {/* Mobile Menu */}
-                        {/*Mobile Menu Overlay */}
-                        <div
+                  {/* Mobile Menu */}
+                  {/*Mobile Menu Overlay */}
+                  <div
                         className={nav ? 'md:hidden fixed left-0 top-0 w-full h-screen bg-black/70' : ''}>
                         <div
                               className={
@@ -235,9 +235,12 @@ const Navbar = () => {
                                     <div className='flex w-full items-center justify-between'>
                                           <Link href='/'>
 
-                                                <h1 className='font-bold text-4xl text-[#5651e5]'>
+                                                <h1 className='font-bold text-4xl'>
                                                       SicaaDev
                                                 </h1>
+                                                {/* <h1 className='font-bold text-4xl text-[#5651e5]'>
+                                                      SicaaDev
+                                                </h1> */}
 
                                           </Link>
                                           <div

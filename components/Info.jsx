@@ -1,5 +1,5 @@
 "use client"
-import React, { useState } from 'react'
+import React, { useState ,useRef } from 'react'
 import lap from "../public/laptop.png"
 import debug1 from "../public/debug1.png"
 import debug2 from "../public/debug2.png"
@@ -44,7 +44,7 @@ const Info = () => {
                                     onMouseEnter={() => setHoveredIndex(index)}
                                     onMouseLeave={() => setHoveredIndex(null)}
                               >
-                                    <div> 
+                                    <div>
                                           <Image className='max-h-52 max-w-52' src={data.image} />
                                     </div>
                                     <h2 className='m-3 font-semibold'>{data.title}</h2>

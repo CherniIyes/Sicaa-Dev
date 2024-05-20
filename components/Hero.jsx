@@ -1,6 +1,12 @@
-import React from 'react'
+"use client"
+import React, { useRef } from 'react';
+import { motion } from 'framer-motion';
+
+
+
 
 const Hero = ({ heading, message }) => {
+      const containerRef = useRef();
       return (
             <div id='Hero'  className='flex items-center justify-center h-screen mb-12 bg-fixed bg-center bg-cover custom-img'>
 
@@ -12,6 +18,8 @@ const Hero = ({ heading, message }) => {
                         <h2 className='text-5xl font-bold'>{heading}</h2>
                         <p className='py-5 text-xl'>{message}</p>
                         <button className='px-8 py-2 border hover:cursor-default' >placeholder button</button>
+
+                        
                   </div>
             </div>
       )

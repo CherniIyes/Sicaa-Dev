@@ -4,7 +4,7 @@ import AboutUs from '@/components/AboutUs';
 import Info from '@/components/Info';
 import Projects from '@/components/Projects';
 import Footer from '@/components/Footer';
-import ResumeButton from '@/components/Resume'; // Import ResumeButton component
+
 import Experties from '@/components/Experties';
 import Resume from '@/components/Certificate'
 import Brain from '@/components/brain';
@@ -18,7 +18,7 @@ const Home = () => {
       <Experties />
       <Info />
       <Projects />
-      <ResumeButton />
+     
 <Resume/>
       <Footer />
       {/* Include ResumeButton component here */}

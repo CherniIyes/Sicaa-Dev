@@ -7,6 +7,7 @@ import Footer from '@/components/Footer';
 
 import Experties from '@/components/Experties';
 import Resume from '@/components/Certificate'
+import Tech from '@/components/Tech'
 import Brain from '@/components/brain';
 
 const Home = () => {
@@ -20,6 +21,7 @@ const Home = () => {
       <Projects />
      
 <Resume/>
+<Tech/>
       <Footer />
       {/* Include ResumeButton component here */}
     </div>

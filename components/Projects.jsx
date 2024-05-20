@@ -53,23 +53,23 @@ const Info = () => {
   ];
 
   return (
-    <div id='projects' className="my-16 mx-36 ">
-      <div className="text-center mb-8">
+    <div id='projects' className="my-16  ">
+      <div className="text-center">
         <p className="font-bold text-yellow-300 text-2xl">Our Projects</p>
         <h1 className="text-4xl font-bold text-gray-800">Discover Our Work</h1>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="mt-20 flex justify-evenly items-center flex-wrap">
         {workInfoData.map((data, index) => (
           <div
             key={data.title}
-            className={`relative rounded-lg overflow-hidden transition-transform duration-300 transform hover:scale-105 max-w-xl  ${hoveredIndex !== null && hoveredIndex !== index ? 'scale-90' : ''}`}
+            className={`w-96 min-h-96 max-h-96 bg-white p-6 flex flex-col justify-center items-center rounded-2xl m-4 transition-transform duration-300 transform hover:scale-105 max-w-xl  ${hoveredIndex !== null && hoveredIndex !== index ? 'scale-90' : ''}`}
             onMouseEnter={() => setHoveredIndex(index)}
             onMouseLeave={() => setHoveredIndex(null)}
           >
             <a href={data.link} target="_blank" rel="noopener noreferrer">
-              <Image src={data.image} alt={data.title} width={500} height={350} className=' md:min-h-64 md:max-h-64' />
+              <Image src={data.image} alt={data.title} className='max-h-80 max-w-80' />
               <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 transition-opacity duration-300">
-                <FaGithub className="text-white text-3xl" />
+                {/* <FaGithub className="text-white text-3xl" /> */}
               </div>
             </a>
             <div className="p-4 bg-white flex justify-between items-center min-h-28 max-h-28">
@@ -78,7 +78,7 @@ const Info = () => {
                 <p className="text-sm text-gray-600 mt-2">{data.description}</p>
               </div>
               <a href={data.link} target="_blank" rel="noopener noreferrer" className="text-black">
-                <FaGithub className="text-3xl" />
+                {/* <FaGithub className="text-3xl" /> */}
               </a>
             </div>
           </div>

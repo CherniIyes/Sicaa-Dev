@@ -40,57 +40,6 @@ const Navbar = () => {
         setNav(!nav);
     };
 
-    const topVariants = {
-        closed: {
-            rotate: 0,
-        },
-        opened: {
-            rotate: 45,
-            backgroundColor: "rgb(255,255,255)",
-        },
-    };
-    const centerVariants = {
-        closed: {
-            opacity: 1,
-        },
-        opened: {
-            opacity: 0,
-        },
-    };
-
-    const bottomVariants = {
-        closed: {
-            rotate: 0,
-        },
-        opened: {
-            rotate: -45,
-            backgroundColor: "rgb(255,255,255)",
-        },
-    };
-
-    const listVariants = {
-        closed: {
-            x: "100vw",
-        },
-        opened: {
-            x: 0,
-            transition: {
-                when: "beforeChildren",
-                staggerChildren: 0.2,
-            },
-        },
-    };
-
-    const listItemVariants = {
-        closed: {
-            x: -10,
-            opacity: 0,
-        },
-        opened: {
-            x: 0,
-            opacity: 1,
-        },
-    };
 
     return (
         <div style={{ backgroundColor: `${color}` }} className={color ? 'fixed w-full h-20  z-[100] ease-in-out duration-300' : 'fixed w-full h-20 z-[100]'}>
@@ -105,10 +54,10 @@ const Navbar = () => {
                     <ul style={{ color: `${textColor}` }} className='hidden md:flex'>
                         {links.map((link) => (
                             <li key={link.url} className='ml-10 text-sm uppercase hover:border-b'>
-                                <ScrollLink 
-                                    to={link.url} 
-                                    smooth={true} 
-                                    duration={500} 
+                                <ScrollLink
+                                    to={link.url}
+                                    smooth={true}
+                                    duration={500}
                                     spy={true}
                                     exact='true'
                                     offset={-70}
@@ -166,19 +115,21 @@ const Navbar = () => {
                     <div className='py-4 flex flex-col'>
                         <ul className='uppercase'>
                             {links.map((link) => (
-                                <ScrollLink 
-                                    key={link.url}
-                                    to={link.url} 
-                                    smooth={true} 
-                                    duration={500} 
-                                    spy={true}
-                                    exact='true'
-                                    offset={-70}
-                                    onClick={() => setNav(false)}
-                                    className='py-4 text-sm hover:underline'
-                                >
-                                    {link.title}
-                                </ScrollLink>
+                                <li className='uppercase py-4'>
+                                    <ScrollLink
+                                        key={link.url}
+                                        to={link.url}
+                                        smooth={true}
+                                        duration={500}
+                                        spy={true}
+                                        exact='true'
+                                        offset={-70}
+                                        onClick={() => setNav(false)}
+                                        className='py-4 text-sm hover:underline'
+                                    >
+                                        {link.title}
+                                    </ScrollLink>
+                                </li>
                             ))}
                         </ul>
                         <div className='pt-40'>

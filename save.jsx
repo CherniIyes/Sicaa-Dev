@@ -1,96 +1,93 @@
-import React from 'react';
-// import { AiOutlineInstagram } from 'react-icons/ai';
-// import {
-//       FaFacebookF,
-//       FaGit,
-//       FaGithub,
-//       FaTiktok,
-//       FaTwitter,
-// } from 'react-icons/fa';
-import {
-      FaFacebook,
-      FaGithub,
-      FaInstagram,
-      FaTwitter,
-      FaLinkedin
-} from "react-icons/fa";
-
-
-
-
-const Footer = () => {
-      return (
-            <div class="bg-white dark:bg-gray-900">
-                  <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
-                        <div class="md:flex md:justify-between">
-                              <div class="mb-6 md:mb-0">
-                                    <a href="/" class="flex items-center">
-
-                                          <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">SicaaDev™</span>
-                                    </a>
-                              </div>
-                              <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
-                                    <div>
-                                          <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Resources</h2>
-                                          <ul class="text-gray-500 dark:text-gray-400 font-medium">
-                                                <li class="mb-4">
-                                                      <a href="/" class="hover:underline">Flowbite</a>
-                                                </li>
-                                                <li>
-                                                      <a href="/" class="hover:underline">Tailwind CSS</a>
-                                                </li>
-                                          </ul>
-                                    </div>
-                                    <div>
-                                          <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Follow us</h2>
-                                          <ul class="text-gray-500 dark:text-gray-400 font-medium">
-                                                <li class="mb-4">
-                                                      <a href="/" class="hover:underline ">Github</a>
-                                                </li>
-                                                <li>
-                                                      <a href="/" class="hover:underline">Discord</a>
-                                                </li>
-                                          </ul>
-                                    </div>
-                                    <div>
-                                          <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Legal</h2>
-                                          <ul class="text-gray-500 dark:text-gray-400 font-medium">
-                                                <li class="mb-4">
-                                                      <a href="#" class="hover:underline">Privacy Policy</a>
-                                                </li>
-                                                <li>
-                                                      <a href="#" class="hover:underline">Terms &amp; Conditions</a>
-                                                </li>
-                                          </ul>
-                                    </div>
-                              </div>
-                        </div>
-                        <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-                        <div class="sm:flex sm:items-center sm:justify-between">
-                              <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2025 <a href="/" class="hover:underline">SicaaDev™</a>. All Rights Reserved.
-                              </span>
-                              <div class="flex mt-4 sm:justify-center sm:mt-0">
-                                    <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
-                                          <FaFacebook />
-                                    </a>
-                                    <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
-                                          <FaInstagram />
-                                    </a>
-                                    <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
-                                          <FaTwitter />
-                                    </a>
-                                    <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
-                                          <FaLinkedin />
-                                    </a>
-                                    <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
-                                          <FaGithub />
-                                          <span class="sr-only">Dribbble account</span>
-                                    </a>
-                              </div>
-                        </div>
-                  </div>
+<div className="flex justify-between h-48">
+      {/* LEFT */}
+      <div className="w-1/3 ">
+            {/* JOB TITLE */}
+            <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
+                  Senior JavaScript Engineer
             </div>
-      );
-};
-
-export default Footer;
+            {/* JOB DESC */}
+            <div className="p-3 text-sm italic">
+                  I led web development, offering expertise in JavaScript
+                  frameworks.{" "}
+            </div>
+            {/* JOB DATE */}
+            <div className="p-3 text-red-400 text-sm font-semibold">
+                  2024 - Present
+            </div>
+            {/* JOB COMPANY */}
+            <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
+                  Apple
+            </div>
+      </div>
+      {/* CENTER */}
+      <div className="w-1/6 flex justify-center">
+            {/* LINE */}
+            <div className="w-1 h-full bg-gray-600 rounded relative">
+                  {/* LINE CIRCLE */}
+                  <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-white -left-2"></div>
+            </div>
+      </div>
+      {/* RIGHT */}
+      <div className="w-1/3 "></div>
+</div>
+{/* EXPERIENCE LIST ITEM */ }
+<div className="flex justify-between h-48">
+      {/* LEFT */}
+      <div className="w-1/3 "></div>
+      {/* CENTER */}
+      <div className="w-1/6 flex justify-center">
+            {/* LINE */}
+            <div className="w-1 h-full bg-gray-600 rounded relative">
+                  {/* LINE CIRCLE */}
+                  <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-white -left-2"></div>
+            </div>
+      </div>
+      {/* RIGHT */}
+      <div className="w-1/3 ">
+            {/* JOB TITLE */}
+            <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
+                  Senior React Developer
+            </div>
+            {/* JOB DESC */}
+            <div className="p-3 text-sm italic">
+                  I spearheaded React-based application development,
+                  leveraging advanced skills.{" "}
+            </div>
+            {/* JOB DATE */}
+            <div className="p-3 text-red-400 text-sm font-semibold">
+                  2019 - 2024{" "}
+            </div>
+            {/* JOB COMPANY */}
+            <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
+                  Microsoft
+            </div>
+      </div>
+</div>
+{/* EXPERIENCE LIST ITEM */ }
+<div className="flex justify-between h-48">
+      {/* LEFT */}
+      <div className="w-1/3 ">
+            {/* JOB TITLE */}
+            <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
+                  Freelancer{" "}
+            </div>
+            {/* JOB DESC */}
+            <div className="p-3 text-sm italic">
+                  I provided web solutions, applying a range of technologies
+                  to address client requirements.{" "}
+            </div>
+            {/* JOB DATE */}
+            <div className="p-3 text-red-400 text-sm font-semibold">
+                  2010 - 2019{" "}
+            </div>
+      </div>
+      {/* CENTER */}
+      <div className="w-1/6 flex justify-center">
+            {/* LINE */}
+            <div className="w-1 h-full bg-gray-600 rounded relative">
+                  {/* LINE CIRCLE */}
+                  <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-white -left-2"></div>
+            </div>
+      </div>
+      {/* RIGHT */}
+      <div className="w-1/3 "></div>

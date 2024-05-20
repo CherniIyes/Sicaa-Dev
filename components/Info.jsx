@@ -28,7 +28,7 @@ const Info = () => {
       ];
 
       return (
-            <div id='work' className="mt-60 ">
+            <div id='work' className="my-44">
                   <div className="text-center">
                         <p className="text-center font-bold text-yellow-300 text-2xl mb-2">Work</p>
                         <h1 className="text-center text-6xl font-bold mb-8 text-gray-800">Lorem ipsum dolor sit amet</h1>

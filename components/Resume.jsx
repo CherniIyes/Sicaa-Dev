@@ -21,7 +21,7 @@ const images = [
 
 const ResumeButton = () => {
   return (
-    <div id='Resume' className="space-y-4">
+    <div id='Resume' className="space-y-4 mx-20 mt-12">
       <h2 className="text-xl font-bold mb-4">Names List</h2>
       {names.map((name, index) => (
         <div key={index} className="flex items-center justify-between space-x-4 bg-gray-100 px-4 py-2 rounded-md hover:shadow-lg">

@@ -9,7 +9,7 @@ import ImgNextt from "../public/next.svg"
 
 const AboutUS = () => {
       return (
-            <div id='aboutUS' className='my-52 text-center'>
+            <div id='aboutUS' className='my-44 text-center'>
                   <div className='max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center'>
                         <div>
                               <p className='uppercase text-sm tracking-widest text-gray-600'>

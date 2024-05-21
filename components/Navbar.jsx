@@ -5,7 +5,7 @@ import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from 'react-icons/ai';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 import Image from 'next/image';
-import sicca from "../public/sicca.png";
+import sicca from "../public/favicons.ico";
 import { motion } from "framer-motion";
 import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
 
@@ -40,14 +40,14 @@ const Navbar = () => {
         setNav(!nav);
     };
 
-
     return (
         <div style={{ backgroundColor: `${color}` }} className={color ? 'fixed w-full h-20  z-[100] ease-in-out duration-300' : 'fixed w-full h-20 z-[100]'}>
             <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
-                <Link href='/'>
-                    <h1 style={{ color: `${textColor}` }} className='font-bold text-4xl'>
-                        SicaaDev
-                    </h1>
+                <Link href='/'style={{ marginTop: '50px',marginLeft:'20px' }}>
+                    <Image src={sicca} alt='SicaaDev Logo' width={80} height={80} />
+                    <h1 style={{ color: `${textColor}`,marginLeft:'-15px' }} className='font-bold text-3xl'>
+                         SicaaDev
+</h1>
                 </Link>
 
                 <div>

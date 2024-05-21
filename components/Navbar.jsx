@@ -46,7 +46,7 @@ const Navbar = () => {
                 <Link href='/'style={{ marginTop: '50px',marginLeft:'20px' }}>
                     <Image src={sicca} alt='SicaaDev Logo' width={80} height={80} />
                     <h1 style={{ color: `${textColor}`,marginLeft:'-15px' }} className='font-bold text-3xl'>
-                         SicaaDev
+                      
 </h1>
                 </Link>
 

@@ -64,6 +64,7 @@ const Title = styled.h1`
   font-weight: bold;
   margin-bottom: 20px;
   color: #333;
+  text-align: center;
 `;
 
 const ResumeList = styled.div`
@@ -105,8 +106,15 @@ const Name = styled.h2`
 
 const Buttons = styled.div`
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
   width: 100%;
+  @media (min-width: 600px) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 `;
 
 const Button = styled.button`
@@ -122,6 +130,7 @@ const Button = styled.button`
   border: none;
   cursor: pointer;
   transition: 400ms;
+  width: 100%;
   .text {
     color: white;
     font-weight: 700;
@@ -139,6 +148,9 @@ const Button = styled.button`
   }
   &:hover svg path {
     fill: #181717;
+  }
+  @media (min-width: 600px) {
+    width: auto;
   }
 `;
 

@@ -11,10 +11,10 @@ const technologies = [
       name: "JavaScript",
       icon: "/images/javascript.png",
     },
-    {
-      name: "TypeScript",
-      icon: "/images/typescript.png",
-    },
+    // {
+    //   name: "TypeScript",
+    //   icon: "/images/typescript.png",
+    // },
     {
       name: "React JS",
       icon: "/images/reactjs.png",
@@ -35,10 +35,10 @@ const technologies = [
       name: "MongoDB",
       icon: "/images/mongodb.png",
     },
-    // {
-    //   name: "Three JS",
-    //   icon: "/images/threejs.png",
-    // },
+    {
+      name: "nextjs",
+      icon: "/images/nextjs.png",
+    },
     {
       name: "Git",
       icon: "/images/git.png",

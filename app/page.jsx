@@ -17,8 +17,8 @@ const Home = () => {
       <Experties />
       <Info />
       <Projects />
-     <Resume/>
-<Tech/>
+      <Resume />
+      <Tech />
       <Footer />
     </div>
   );

@@ -53,7 +53,7 @@ const Navbar = () => {
                 <div>
                     <ul style={{ color: `${textColor}` }} className='hidden md:flex'>
                         {links.map((link) => (
-                            <li key={link.url} className='ml-10 text-sm uppercase hover:border-b'>
+                            <li key={link.url} className='ml-10 text-sm uppercase transform hover:scale-110 hover:border-b-2 hover:border-red-500 transition duration-400 ease-in-out p-2 rounded-lg hover:bg-white-100 '>
                                 <ScrollLink
                                     to={link.url}
                                     smooth={true}

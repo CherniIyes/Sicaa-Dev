@@ -22,12 +22,14 @@ const ResumeDownload = () => {
 
   return (
     <div className="flex flex-col items-center justify-center p-5 bg-white min-h-screen" id="Certificate">
-      <h1 className="text-2xl font-bold mb-5 text-gray-800">Download Resumes and Certificates</h1>
+    <h1 className="text-4xl font-extrabold mb-8 text-gray-900 leading-tight">
+  Explore Our Talent Pool
+</h1>
       <div className="w-full max-w-xl">
         {resumes.map((resume, index) => (
           <div key={index} className="bg-white p-5 rounded-lg shadow-lg mb-5 transition-transform transform hover:-translate-y-1 hover:shadow-xl">
             <div className="flex items-center mb-5">
-              <img src={`/${resume.image}`} alt={resume.name} className="w-10 h-10 rounded-full mr-4" /> {/* Adjusted image size */}
+              <img src={`/${resume.image}`} alt={resume.name} className="w-20 h-20 rounded-full mr-4" /> {/* Adjusted image size */}
               <h2 className="text-xl font-bold text-gray-800">{resume.name}</h2>
             </div>
             <div className="flex flex-col md:flex-row justify-between"> {/* Wrapped buttons in a flex column for mobile */}

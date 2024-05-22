@@ -43,7 +43,7 @@ const Footer = () => {
               <ul className="text-gray-500 font-medium">
                 <li className="mb-4 flex items-center">
                   <FaEnvelope className="mr-2 text-gray-800" />
-                  <a href="mailto:info@sicaadev.com" className="hover:underline">info@sicaadev.com</a>
+                  <a href="mailto:siccadev@gmail.com" className="hover:underline">siccadev@gmail.com</a>
                 </li>
                 <li className="flex items-center">
                   <FaWhatsapp className="mr-2 text-gray-800" />
@@ -57,22 +57,22 @@ const Footer = () => {
         <div className="sm:flex sm:items-center sm:justify-between">
           <div className="text-sm text-gray-500 sm:text-center">© 2024 <a href="/" className="hover:underline">SicaaDev</a>. All Rights Reserved.</div>
           <div className="flex mt-4 sm:justify-center sm:mt-0 space-x-6">
-            <a href="https://www.facebook.com/profile.php?id=61558877354559" className="text-gray-800 hover:text-yellow-500 ease-in-out duration-300">
+            <a href="https://www.facebook.com/profile.php?id=61558877354559" className="text-gray-800 hover:text-black-500 ease-in-out duration-300">
               <FaFacebook size={24} />
             </a>
-            <a href="https://www.instagram.com/siccadev/" className="text-gray-800 hover:text-yellow-500 ease-in-out duration-300">
+            <a href="https://www.instagram.com/siccadev/" className="text-gray-800 hover:text-black-500 ease-in-out duration-300">
               <FaInstagram size={24} />
             </a>
-            <a href="mailto:siccadev@gmail.com" className="text-gray-800 hover:text-yellow-500 ease-in-out duration-300">
+            <a href="mailto:siccadev@gmail.com" className="text-gray-800 hover:text-black-500 ease-in-out duration-300">
               <FaEnvelope size={24} />
             </a>
-            <a href="https://www.linkedin.com/in/sicca-dev-a6a952307/" className="text-gray-800 hover:text-yellow-500 ease-in-out duration-300">
+            <a href="https://www.linkedin.com/in/sicca-dev-a6a952307/" className="text-gray-800 hover:text-black-500 ease-in-out duration-300">
               <FaLinkedin size={24} />
             </a>
-            <a href="https://github.com/siccadev" className="text-gray-800 hover:text-yellow-500 ease-in-out duration-300">
+            <a href="https://github.com/siccadev" className="text-gray-800 hover:text-black-500 ease-in-out duration-300">
               <FaGithub size={24} />
             </a>
-            <a href="https://wa.me/55331742" className="text-gray-800 hover:text-yellow-500 ease-in-out duration-300">
+            <a href="https://wa.me/55331742" className="text-gray-800 hover:text-black-500 ease-in-out duration-300">
               <FaWhatsapp size={24} />
             </a>
           </div>

@@ -53,7 +53,7 @@ const Info = () => {
   ];
 
   return (
-    <div id='projects' className="my-16  ">
+    <div id='projects' className="my-10">
       <div className="text-center">
         <p className="font-bold text-yellow-300 text-2xl">Our Projects</p>
         <h1 className="text-4xl font-bold text-gray-800">Discover Our Work</h1>

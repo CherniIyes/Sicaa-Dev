@@ -1,7 +1,6 @@
 "use client"
 import React from 'react'
 import Hero from '@/components/Hero';
-import AboutUs from '@/components/AboutUs';
 import Info from '@/components/Info';
 import Projects from '@/components/Projects';
 import Footer from '@/components/Footer';
@@ -9,12 +8,13 @@ import Experties from '@/components/Experties';
 import Resume from '@/components/Certificate'
 import Tech from '@/components/Tech'
 import { motion } from 'framer-motion';
+import AboutUS from '@/components/AboutUS';
 
 const Home = () => {
   return (
     <div>
       <Hero heading="Full-Stack Web & Mobile Development" message="Building scalable, responsive web and mobile applications to bring your ideas to life. " />
-      <AboutUs />
+      <AboutUS />
       <Tech />
       <div className='flex justify-center items-center my-24'>
         <motion.svg

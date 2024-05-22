@@ -43,17 +43,17 @@ const Navbar = () => {
     return (
         <div style={{ backgroundColor: `${color}` }} className={color ? 'fixed w-full h-20  z-[100] ease-in-out duration-300' : 'fixed w-full h-20 z-[100]'}>
             <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
-                <Link href='/'style={{ marginTop: '50px',marginLeft:'20px' }}>
+                <Link href='/'style={{ marginTop: '10px',marginLeft:'10px' }}>
                     <Image src={sicca} alt='SicaaDev Logo' width={80} height={80} />
-                    <h1 style={{ color: `${textColor}`,marginLeft:'-15px' }} className='font-bold text-3xl'>
-                      
-</h1>
+                    {/* <h1 style={{ color: `${textColor}`,marginLeft:'-15px' }} className='font-bold text-3xl'>
+                         SicaaDev
+</h1> */}
                 </Link>
 
                 <div>
                     <ul style={{ color: `${textColor}` }} className='hidden md:flex'>
                         {links.map((link) => (
-                            <li key={link.url} className='ml-10 text-sm uppercase hover:border-b'>
+                            <li key={link.url} className='ml-10 text-sm uppercase transform hover:scale-110 hover:border-b-2 hover:border-red-500 transition duration-400 ease-in-out p-2 rounded-lg hover:bg-white-100 '>
                                 <ScrollLink
                                     to={link.url}
                                     smooth={true}

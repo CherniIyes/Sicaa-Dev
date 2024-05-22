@@ -43,15 +43,22 @@ const Navbar = () => {
 
     return (
         <div style={{ backgroundColor: `${color}` }} className={color ? 'fixed w-full h-20  z-[100] ease-in-out duration-300' : 'fixed w-full h-20 z-[100]'}>
-            <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
-                <Link href='/'>
+            <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16 cursor-pointer'>
+                <ScrollLink
+                    to="Hero"
+                    smooth={true}
+                    duration={500}
+                    spy={true}
+                    exact='true'
+                    offset={-70}
+                >
                     <div className='flex items-center'>
                         <Image src={sicca} alt='SicaaDev Logo' width={50} />
                         <h1 style={{ color: `${textColor}` }} className='font-bold text-4xl mb-1 ml-2'>
                             SicaaDev
                         </h1>
                     </div>
-                </Link>
+                </ScrollLink>
 
                 <div>
                     <ul style={{ color: `${textColor}` }} className='hidden md:flex'>

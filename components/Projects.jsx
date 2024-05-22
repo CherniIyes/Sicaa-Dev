@@ -5,8 +5,8 @@ import { FaGithub } from 'react-icons/fa';
 import c from "../public/c.jpg";
 import cc from "../public/cc.png";
 import a from "../public/a.jpg";
-import bb from "@/public/bb.png";
-import aaa from "@/public/aaa.png";
+import geo from "@/public/geo.png";
+import drive from "@/public/drive.png";
 import Flou from "../public/Flou.png";
 
 const Info = () => {
@@ -38,13 +38,13 @@ const Info = () => {
       link: "https://github.com/abdelhakbarbouche/Parfumerie-Barbouch-",
     },
     {
-      image: bb,
+      image: geo,
       title: "Geography game",
       description: "An educational geography quiz game to test users' knowledge.",
       link: "https://github.com/firaslamouchi21/Geography-Game",
     },
     {
-      image: aaa,
+      image: drive,
       title: "Drive",
       description: "Master driving with our comprehensive lessons and practical tips.",
       link: "https://github.com/IyeddAmri/driving-schoool",

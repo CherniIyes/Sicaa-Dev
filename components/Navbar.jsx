@@ -98,7 +98,7 @@ const Navbar = () => {
                 <div
                     className={
                         nav
-                            ? ' fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500'
+                            ? ' fixed left-0 top-0 w-[80%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500'
                             : 'fixed left-[-100%] top-0 p-10 ease-in duration-500'
                     }
                 >
@@ -106,12 +106,13 @@ const Navbar = () => {
                         <div className='flex w-full items-center justify-between'>
                             <div className='flex items-center min-w-64'>
 
-                                <div className='flex items-center ml-1'>
+                                <div className='flex items-center mr-4'>
                                     <Image src={sicca} alt='SicaaDev Logo' width={40} />
                                     <h1 className='font-bold text-3xl mb-1 '>
                                         SicaaDev
                                     </h1>
                                 </div>
+
                                 <div
                                     onClick={handleNav}
                                     className='rounded-full shadow-lg shadow-gray-400 p-2 cursor-pointer'>

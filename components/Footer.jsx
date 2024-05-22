@@ -1,4 +1,5 @@
 import React from 'react';
+import { AiOutlineMail } from 'react-icons/ai';
 import { FaFacebook, FaGithub, FaInstagram, FaEnvelope, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 
 const Footer = () => {

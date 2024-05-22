@@ -53,8 +53,8 @@ const Navbar = () => {
                     offset={-70}
                 >
                     <div className='flex items-center '>
-                        <Image src={sicca} alt='SicaaDev Logo' width={50} />
-                        <h1 style={{ color: `${textColor}` }} className='font-bold text-4xl mb-1 ml-2'>
+                        <Image src={sicca} alt='SicaaDev Logo' width={40} />
+                        <h1 style={{ color: `${textColor}` }} className='font-bold text-3xl ml-2'>
                             SicaaDev
                         </h1>
                     </div>
@@ -106,9 +106,9 @@ const Navbar = () => {
                         <div className='flex w-full items-center justify-between'>
                             <div className='flex items-center min-w-64'>
 
-                                <div className='flex items-center mr-5'>
-                                    <Image src={sicca} alt='SicaaDev Logo' width={50} />
-                                    <h1 className='font-bold text-4xl mb-1 ml-2'>
+                                <div className='flex items-center ml-1'>
+                                    <Image src={sicca} alt='SicaaDev Logo' width={40} />
+                                    <h1 className='font-bold text-3xl mb-1 '>
                                         SicaaDev
                                     </h1>
                                 </div>

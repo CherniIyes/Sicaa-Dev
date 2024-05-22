@@ -47,7 +47,7 @@ const Footer = () => {
                 </li>
                 <li className="flex items-center">
                   <FaWhatsapp className="mr-2 text-gray-800" />
-                  <a href="https://wa.me/55331742" target="_blank" rel="noopener noreferrer" className="hover:underline">WhatsApp</a>
+                  <a href="https://wa.me/92825238" target="_blank" rel="noopener noreferrer" className="hover:underline">WhatsApp</a>
                 </li>
               </ul>
             </div>
@@ -72,7 +72,7 @@ const Footer = () => {
             <a href="https://github.com/siccadev" className="text-gray-800 hover:text-black-500 ease-in-out duration-300">
               <FaGithub size={24} />
             </a>
-            <a href="https://wa.me/55331742" className="text-gray-800 hover:text-black-500 ease-in-out duration-300">
+            <a href="https://wa.me/92825238" className="text-gray-800 hover:text-black-500 ease-in-out duration-300">
               <FaWhatsapp size={24} />
             </a>
           </div>

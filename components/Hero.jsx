@@ -25,10 +25,6 @@ const Hero = ({ heading, message }) => {
       </div>
     </div>
   );
-
-
-
-
 }
 
 export default Hero;

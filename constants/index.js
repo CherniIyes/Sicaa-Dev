@@ -12,8 +12,8 @@ const technologies = [
     icon: "/images/reactjs.png",
   },
   {
-    name: "CSS 3",
-    icon: "/images/css.png",
+    name: "nextjs",
+    icon: "/images/nextjs.png",
   },
   {
     name: "Tailwind CSS",
@@ -32,16 +32,16 @@ const technologies = [
     icon: "/images/nodejs.png",
   },
   {
-    name: "MongoDB",
-    icon: "/images/mongodb.png",
+    name: "Three JS",
+    icon: "/images/threejs.png",
   },
   // {
   //   name: "Three JS",
   //   icon: "/images/threejs.png",
   // },
   {
-    name: "Git",
-    icon: "/images/git.png",
+    name: "Figma",
+    icon: "/images/figma.png",
   },
   // {
   //   name: "Figma",

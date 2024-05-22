@@ -12,6 +12,7 @@ import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
 const links = [
     { url: "Hero", title: "Home" },
     { url: "aboutUS", title: "About" },
+    { url: "aboutUS", title: "Skills" },
     { url: "projects", title: "Projects" },
     { url: "Certificate", title: "Certificate" },
     { url: "contact", title: "Contact" },
@@ -39,20 +40,23 @@ const Navbar = () => {
         setNav(!nav);
     };
 
+
     return (
         <div style={{ backgroundColor: `${color}` }} className={color ? 'fixed w-full h-20  z-[100] ease-in-out duration-300' : 'fixed w-full h-20 z-[100]'}>
             <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
-                <Link href='/'style={{ marginTop: '10px',marginLeft:'10px' }}>
-                    <Image src={sicca} alt='SicaaDev Logo' width={80} height={80} />
-                    {/* <h1 style={{ color: `${textColor}`,marginLeft:'-15px' }} className='font-bold text-3xl'>
-                         SicaaDev
-</h1> */}
+                <Link href='/'>
+                    <div className='flex items-center'>
+                        <Image src={sicca} alt='SicaaDev Logo' width={50} />
+                        <h1 style={{ color: `${textColor}` }} className='font-bold text-4xl mb-1 ml-2'>
+                            SicaaDev
+                        </h1>
+                    </div>
                 </Link>
 
                 <div>
                     <ul style={{ color: `${textColor}` }} className='hidden md:flex'>
                         {links.map((link) => (
-                            <li key={link.url} className='ml-10 text-sm uppercase transform hover:scale-110 hover:border-b-2 hover:border-red-500 transition duration-400 ease-in-out p-2 rounded-lg hover:bg-white-100 '>
+                            <li key={link.url} className='ml-10 text-sm uppercase hover:border-b'>
                                 <ScrollLink
                                     to={link.url}
                                     smooth={true}
@@ -83,7 +87,7 @@ const Navbar = () => {
             </div>
 
             {/* Mobile Menu */}
-            <div className={nav ? 'md:hidden fixed left-0 top-0 w-full h-screen bg-black/70' : ''}>
+            <div className={nav ? 'md:hidden fixed left-0 top-0 w-full h-screen bg-black/70 ' : ''}>
                 <div
                     className={
                         nav
@@ -131,13 +135,13 @@ const Navbar = () => {
                                 </li>
                             ))}
                         </ul>
-                        <div className='pt-40'>
+                        <div className='responsive-pt'>
                             <p className='uppercase tracking-widest text-[#5651e5]'>
                                 Let&#39;s Connect
                             </p>
                             <div className='flex items-center justify-between my-4 w-full sm:w-[80%]'>
                                 <a
-                                    href='https://www.linkedin.com/in/clint-briley-50056920a/'
+                                    href='https://www.linkedin.com/in/sicca-dev-a6a952307/'
                                     target='_blank'
                                     rel='noreferrer'
                                 >
@@ -146,7 +150,7 @@ const Navbar = () => {
                                     </div>
                                 </a>
                                 <a
-                                    href='https://github.com/fireclint'
+                                    href='https://github.com/siccadev'
                                     target='_blank'
                                     rel='noreferrer'
                                 >
@@ -154,22 +158,23 @@ const Navbar = () => {
                                         <FaGithub />
                                     </div>
                                 </a>
-                                <ScrollLink to='contact' smooth={true} duration={500}>
-                                    <div
-                                        onClick={() => setNav(!nav)}
-                                        className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'
-                                    >
+
+                                <a href="mailto:siccadev@gmail.com">
+                                    <div onClick={() => setNav(!nav)}
+                                        className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
                                         <AiOutlineMail />
                                     </div>
-                                </ScrollLink  >
-                                <Link href='/Certificate'>
+                                </a>
+                                <ScrollLink to='Certificate' smooth={true} duration={500}>
                                     <div
                                         onClick={() => setNav(!nav)}
                                         className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'
                                     >
                                         <BsFillPersonLinesFill />
                                     </div>
-                                </Link>
+                                </ScrollLink  >
+
+
                             </div>
                         </div>
                     </div>

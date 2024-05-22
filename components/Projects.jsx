@@ -5,8 +5,8 @@ import { FaGithub } from 'react-icons/fa';
 import c from "../public/c.jpg";
 import cc from "../public/cc.png";
 import a from "../public/a.jpg";
-import bb from "../public/bb.png";
-import aaa from "../public/aaa.png";
+import bb from "@/public/bb.png";
+import aaa from "@/public/aaa.png";
 import Flou from "../public/Flou.png";
 
 const Info = () => {

@@ -104,7 +104,7 @@ const Navbar = () => {
                 >
                     <div>
                         <div className='flex w-full items-center justify-between'>
-                            <div className='flex items-center'>
+                            <div className='flex items-center min-w-64'>
 
                                 <div className='flex items-center mr-5'>
                                     <Image src={sicca} alt='SicaaDev Logo' width={50} />
@@ -114,7 +114,7 @@ const Navbar = () => {
                                 </div>
                                 <div
                                     onClick={handleNav}
-                                    className='rounded-full shadow-lg shadow-gray-400 ml-9 p-2 cursor-pointer'>
+                                    className='rounded-full shadow-lg shadow-gray-400 p-2 cursor-pointer'>
                                     <AiOutlineClose />
                                 </div>
 

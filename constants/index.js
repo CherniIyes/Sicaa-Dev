@@ -8,11 +8,11 @@ const technologies = [
     icon: "/images/javascript.png",
   },
   {
-    name: "React JS",
+    name: "React",
     icon: "/images/reactjs.png",
   },
   {
-    name: "nextjs",
+    name: "Next.js",
     icon: "/images/nextjs.png",
   },
   {
@@ -24,15 +24,15 @@ const technologies = [
   //   icon: "/images/typescript.png",
   // },
   {
-    name: "Redux Toolkit",
+    name: "Redux",
     icon: "/images/redux.png",
   },
   {
-    name: "Node JS",
+    name: "Node.js",
     icon: "/images/nodejs.png",
   },
   {
-    name: "Three JS",
+    name: "Three.js",
     icon: "/images/threejs.png",
   },
   // {

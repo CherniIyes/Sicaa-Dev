@@ -104,11 +104,12 @@ const Navbar = () => {
                 >
                     <div>
                         <div className='flex w-full items-center justify-between'>
-                            <Link href='/'>
-                                <h1 className='font-bold text-4xl text-[#5651e5]'>
+                            <div className='flex items-center'>
+                                <Image src={sicca} alt='SicaaDev Logo' width={50} />
+                                <h1 className='font-bold text-4xl mb-1 ml-2'>
                                     SicaaDev
                                 </h1>
-                            </Link>
+                            </div>
                             <div
                                 onClick={handleNav}
                                 className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer'

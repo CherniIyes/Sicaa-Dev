@@ -9,14 +9,15 @@ import cc from "../public/cc.png";
 import a from "../public/a.jpg";
 import bb from "../public/bb.png";
 import aaa from "../public/aaa.png";
+import Flou from "../public/Flou.png";
 
 const Info = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
   const workInfoData = [
     {
-      image: b,
-      title: "Floucy",
+      image: Flou,
+      title: "Flouzy",
       description: "A cryptocurrency tracker web application built with React and Tailwind CSS.",
       link: "https://github.com/CherniIyes/Crypto-Currency",
     },
@@ -46,7 +47,7 @@ const Info = () => {
     },
     {
       image: aaa,
-      title: "Taf7it",
+      title: "Drive",
       description: "A weather forecast web application providing real-time weather information.",
       link: "https://github.com/IyeddAmri/driving-schoool",
     },

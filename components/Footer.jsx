@@ -1,4 +1,5 @@
 import React from 'react';
+import { AiOutlineMail } from 'react-icons/ai';
 import { FaFacebook, FaGithub, FaInstagram, FaEnvelope, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 
 const Footer = () => {
@@ -64,7 +65,7 @@ const Footer = () => {
               <FaInstagram size={24} />
             </a>
             <a href="mailto:siccadev@gmail.com" className="text-gray-800 hover:text-black-500 ease-in-out duration-300">
-              <FaEnvelope size={24} />
+              <AiOutlineMail size={24}/>
             </a>
             <a href="https://www.linkedin.com/in/sicca-dev-a6a952307/" className="text-gray-800 hover:text-black-500 ease-in-out duration-300">
               <FaLinkedin size={24} />

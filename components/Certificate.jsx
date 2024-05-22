@@ -3,7 +3,7 @@ import React from 'react';
 import Link from 'next/link';
 
 const resumes = [
-  { name: 'Iyess Cherni', file: 'Iyes_Cherni_Resume.pdf', image: 'iyess.png', certificate: 'https://credsverse.com/credentials/d9ec9903-8eac-400e-aa4e-f18c33a0e979?preview=1' },
+  { name: 'Iyes Cherni', file: 'Iyes_Cherni_Resume.pdf', image: 'iyess.png', certificate: 'https://credsverse.com/credentials/d9ec9903-8eac-400e-aa4e-f18c33a0e979?preview=1' },
   { name: 'Khalil Cherni', file: 'Khalil-Cherni.pdf', image: 'khalil.png', certificate: 'https://credsverse.com/credentials/dc5efc73-386d-4165-827d-25cdcc63bf10?preview=1' },
   { name: 'Abdelhak Barbouche', file: 'Developer.pdf', image: 'ha9.png', certificate: 'https://credsverse.com/credentials/9bea193f-56a2-4aa6-8f0e-75ad3c835dab?preview=1&fbclid=IwZXh0bgNhZW0CMTAAAR1xxVL5HT8weqj5Wti8ByIk2ZLfeoXtQ0xEL_6upX3koUnXL-r3rcz4K7M_aem_AZ4Nk4A9LSDqG_BHbmDO3szliPQ1EAo6FV8l3076ey7_j6kR7j10DTSgEfWAjZv2GVEt6dq8yiDdLFWTbVKeRnXI' },
   { name: 'Iyed Amri', file: 'iyed_amris_resume.pdf', image: 'iyed.png', certificate: 'https://credsverse.com/credentials/c3b56d7c-75a3-4572-be79-ad614858e05d?preview=1' },

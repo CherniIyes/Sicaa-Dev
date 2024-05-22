@@ -40,14 +40,14 @@ body {
 
 @media (min-height: 600px) {
   .responsive-pt {
-    padding-top: 2rem;
+    padding-top: 1rem;
     /* pt-10 */
   }
 }
 
 @media (min-height: 700px) {
   .responsive-pt {
-    padding-top: 5rem;
+    padding-top: 6rem;
     /* pt-20 */
   }
 }

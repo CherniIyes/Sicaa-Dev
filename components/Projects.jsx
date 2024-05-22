@@ -2,8 +2,6 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import { FaGithub } from 'react-icons/fa';
-
-import b from "../public/b.jpg";
 import c from "../public/c.jpg";
 import cc from "../public/cc.png";
 import a from "../public/a.jpg";

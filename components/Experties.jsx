@@ -10,7 +10,7 @@ const Experties = () => {
   return (
     <div className="flex">
 
-      <div className='min-w-[330px] max-w-2xl mx-auto'>
+      <div className='min-w-[330px] max-w-2xl mx-auto mb-32'>
         <div className="flex justify-between h-48 ">
           {/* LEFT */}
           <div className="w-1/3 ">

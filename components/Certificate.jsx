@@ -39,7 +39,11 @@ const ResumeDownload = () => {
                 </Button>
               </Link>
               <Button onClick={() => handleDownload(resume.file)} className="button">
-                <span className="text">Download Resume</span>
+                <span className="text ">
+                  <p className=''>
+                    Download Resume
+                  </p>
+                </span>
               </Button>
             </Buttons>
           </ResumeItem>

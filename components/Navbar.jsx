@@ -12,7 +12,6 @@ import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
 const links = [
     { url: "Hero", title: "Home" },
     { url: "aboutUS", title: "About" },
-    { url: "skills", title: "Skills" },
     { url: "projects", title: "Projects" },
     { url: "Certificate", title: "Certificate" },
     { url: "contact", title: "Contact" },

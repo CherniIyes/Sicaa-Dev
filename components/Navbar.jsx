@@ -53,9 +53,9 @@ const Navbar = () => {
                     offset={-70}
                 >
                     <div className='flex items-center '>
-                        <Image src={sicca} alt='SicaaDev Logo' width={40} />
+                        <Image src={sicca} alt='SiccaDev Logo' width={40} />
                         <h1 style={{ color: `${textColor}` }} className='font-bold text-3xl ml-2'>
-                            SicaaDev
+                            SiccaDev
                         </h1>
                     </div>
                 </ScrollLink>
@@ -107,9 +107,9 @@ const Navbar = () => {
                             <div className='flex items-center min-w-64'>
 
                                 <div className='flex items-center mr-4'>
-                                    <Image src={sicca} alt='SicaaDev Logo' width={40} />
+                                    <Image src={sicca} alt='SiccaDev Logo' width={40} />
                                     <h1 className='font-bold text-3xl mb-1 '>
-                                        SicaaDev
+                                        SiccaDev
                                     </h1>
                                 </div>
 

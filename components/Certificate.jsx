@@ -1,9 +1,7 @@
 "use client";
 import React from 'react';
 import Link from 'next/link';
-import styled from 'styled-components';
 
-// Array of resumes with associated images
 const resumes = [
   { name: 'Iyess Cherni', file: 'Iyes_Cherni_Resume.pdf', image: 'iyess.jpg', certificate: 'https://credsverse.com/credentials/d9ec9903-8eac-400e-aa4e-f18c33a0e979?preview=1' },
   { name: 'Khalil Cherni', file: 'Khalil-Cherni.pdf', image: 'khalil.jpg', certificate: 'https://credsverse.com/credentials/dc5efc73-386d-4165-827d-25cdcc63bf10?preview=1' },
@@ -23,139 +21,35 @@ const ResumeDownload = () => {
   };
 
   return (
-    <Container id='Certificate'>
-      <Title>Download Resumes and Certificates</Title>
-      <ResumeList>
+    <div className="flex flex-col items-center justify-center p-5 bg-white min-h-screen" id="Certificate">
+    <h1 className="text-4xl font-extrabold mb-8 text-gray-900 leading-tight">
+  Explore Our Talent Pool
+</h1>
+      <div className="w-full max-w-xl">
         {resumes.map((resume, index) => (
-          <ResumeItem key={index}>
-            <Info>
-              <Image src={`/${resume.image}`} alt={resume.name} />
-              <Name>{resume.name}</Name>
-            </Info>
-            <Buttons>
-              <Link href={resume.certificate} passHref>
-                <Button className="button">
-                  <span className="text">View Certificate</span>
-                </Button>
+          <div key={index} className="bg-white p-5 rounded-lg shadow-lg mb-5 transition-transform transform hover:-translate-y-1 hover:shadow-xl">
+            <div className="flex items-center mb-5">
+              <img src={`/${resume.image}`} alt={resume.name} className="w-20 h-20 rounded-full mr-4" /> {/* Adjusted image size */}
+              <h2 className="text-xl font-bold text-gray-800">{resume.name}</h2>
+            </div>
+            <div className="flex flex-col md:flex-row justify-between"> {/* Wrapped buttons in a flex column for mobile */}
+              <Link href={resume.certificate} passHref legacyBehavior>
+                <a className="flex justify-center items-center px-4 py-2 bg-gray-800 text-white font-bold rounded hover:bg-transparent hover:text-gray-800 transition-all border-2 border-gray-800 mb-2 md:mb-0"> {/* Added margin for mobile */}
+                  View Certificate
+                </a>
               </Link>
-              <Button onClick={() => handleDownload(resume.file)} className="button">
-                <span className="text ">
-                  <p className=''>
-                    Download Resume
-                  </p>
-                </span>
-              </Button>
-            </Buttons>
-          </ResumeItem>
+              <button
+                onClick={() => handleDownload(resume.file)}
+                className="flex justify-center items-center px-4 py-2 bg-gray-800 text-white font-bold rounded hover:bg-transparent hover:text-gray-800 transition-all border-2 border-gray-800"
+              >
+                Download Resume
+              </button>
+            </div>
+          </div>
         ))}
-      </ResumeList>
-    </Container>
+      </div>
+    </div>
   );
 };
-
-const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-  background-color: #fff;
-  min-height: 100vh;
-`;
-
-const Title = styled.h1`
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 20px;
-  color: #333;
-  text-align: center;
-`;
-
-const ResumeList = styled.div`
-  width: 100%;
-  max-width: 600px;
-`;
-
-const ResumeItem = styled.div`
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.1);
-  margin-bottom: 20px;
-  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-  &:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 0 25px rgba(0,0,0,0.2);
-  }
-`;
-
-const Info = styled.div`
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
-`;
-
-const Image = styled.img`
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  margin-right: 15px;
-`;
-
-const Name = styled.h2`
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #333;
-`;
-
-const Buttons = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 10px;
-  width: 100%;
-  @media (min-width: 600px) {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-`;
-
-const Button = styled.button`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px 15px;
-  gap: 15px;
-  background-color: #181717;
-  outline: 3px #181717 solid;
-  outline-offset: -3px;
-  border-radius: 5px;
-  border: none;
-  cursor: pointer;
-  transition: 400ms;
-  width: 100%;
-  .text {
-    color: white;
-    font-weight: 700;
-    font-size: 1em;
-    transition: 400ms;
-  }
-  svg path {
-    transition: 400ms;
-  }
-  &:hover {
-    background-color: transparent;
-  }
-  &:hover .text {
-    color: #181717;
-  }
-  &:hover svg path {
-    fill: #181717;
-  }
-  @media (min-width: 600px) {
-    width: auto;
-  }
-`;
 
 export default ResumeDownload;

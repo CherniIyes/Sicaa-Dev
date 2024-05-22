@@ -16,23 +16,24 @@ const Info = () => {
     },
     {
       image: test,
-      title: "Testing",
+      title: "Debugging",
       text: "Ensuring code quality.",
     },
     {
       image: game,
-      title: "Gaming",
-      text: "Developing fun games.",
+      title: "Excellence.",
+      text: "Coding Excellence Guaranteed.",
     },
+    
   ];
 
   return (
     <div id='work' className="my-24 px-4">
       <div className="text-center">
-        <p className="font-bold text-yellow-300 text-2xl mb-2">Work</p>
-        <h1 className="text-4xl md:text-6xl font-bold mb-8 text-gray-800">Lorem ipsum dolor sit amet</h1>
+        <p className="font-bold text-yellow-300 text-2xl mb-2">Our Expertise</p>
+        <h1 className="text-4xl md:text-6xl font-bold mb-8 text-gray-800">Elevating Digital Experiences</h1>
         <p className="font-serif text-xl text-gray-700 mx-auto max-w-2xl">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          Harnessing innovation and creativity to deliver exceptional digital solutions that drive growth and success.
         </p>
       </div>
       <div className=" flex justify-center items-center flex-wrap">

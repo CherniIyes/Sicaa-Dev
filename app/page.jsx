@@ -13,7 +13,7 @@ import { motion } from 'framer-motion';
 const Home = () => {
   return (
     <div>
-      <Hero heading="placeholder heading" message="placeholder msg" />
+      <Hero heading="Full-Stack Web & Mobile Development" message="Building scalable, responsive web and mobile applications to bring your ideas to life. " />
       <AboutUs />
       <Tech />
       <div className='flex justify-center items-center my-24'>

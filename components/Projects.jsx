@@ -48,7 +48,7 @@ const Info = () => {
     {
       image: aaa,
       title: "Drive",
-      description: "A weather forecast web application providing real-time weather information.",
+      description: "Master driving with our comprehensive lessons and practical tips.",
       link: "https://github.com/IyeddAmri/driving-schoool",
     },
   ];

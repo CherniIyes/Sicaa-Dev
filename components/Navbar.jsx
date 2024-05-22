@@ -46,7 +46,7 @@ const Navbar = () => {
             <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
                 <Link href='/'>
                     <div className='flex items-center'>
-                        <Image src={sicca} alt='SicaaDev Logo' width={50}  />
+                        <Image src={sicca} alt='SicaaDev Logo' width={50} />
                         <h1 style={{ color: `${textColor}` }} className='font-bold text-4xl mb-1 ml-2'>
                             SicaaDev
                         </h1>
@@ -87,7 +87,7 @@ const Navbar = () => {
             </div>
 
             {/* Mobile Menu */}
-            <div className={nav ? 'md:hidden fixed left-0 top-0 w-full h-screen bg-black/70' : ''}>
+            <div className={nav ? 'md:hidden fixed left-0 top-0 w-full h-screen bg-black/70 ' : ''}>
                 <div
                     className={
                         nav
@@ -135,13 +135,13 @@ const Navbar = () => {
                                 </li>
                             ))}
                         </ul>
-                        <div className='pt-40'>
+                        <div className='responsive-pt'>
                             <p className='uppercase tracking-widest text-[#5651e5]'>
                                 Let&#39;s Connect
                             </p>
                             <div className='flex items-center justify-between my-4 w-full sm:w-[80%]'>
                                 <a
-                                    href='https://www.linkedin.com/in/clint-briley-50056920a/'
+                                    href='https://www.linkedin.com/in/sicca-dev-a6a952307/'
                                     target='_blank'
                                     rel='noreferrer'
                                 >
@@ -150,7 +150,7 @@ const Navbar = () => {
                                     </div>
                                 </a>
                                 <a
-                                    href='https://github.com/fireclint'
+                                    href='https://github.com/siccadev'
                                     target='_blank'
                                     rel='noreferrer'
                                 >
@@ -158,22 +158,23 @@ const Navbar = () => {
                                         <FaGithub />
                                     </div>
                                 </a>
-                                <ScrollLink to='contact' smooth={true} duration={500}>
-                                    <div
-                                        onClick={() => setNav(!nav)}
-                                        className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'
-                                    >
+
+                                <a href="mailto:siccadev@gmail.com">
+                                    <div onClick={() => setNav(!nav)}
+                                        className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
                                         <AiOutlineMail />
                                     </div>
-                                </ScrollLink  >
-                                <Link href='/Certificate'>
+                                </a>
+                                <ScrollLink to='Certificate' smooth={true} duration={500}>
                                     <div
                                         onClick={() => setNav(!nav)}
                                         className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'
                                     >
                                         <BsFillPersonLinesFill />
                                     </div>
-                                </Link>
+                                </ScrollLink  >
+
+
                             </div>
                         </div>
                     </div>

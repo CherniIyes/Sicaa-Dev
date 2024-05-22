@@ -38,6 +38,42 @@ body {
 }
 
 
+@media (min-height: 600px) {
+  .responsive-pt {
+    padding-top: 2rem;
+    /* pt-10 */
+  }
+}
+
+@media (min-height: 700px) {
+  .responsive-pt {
+    padding-top: 5rem;
+    /* pt-20 */
+  }
+}
+
+@media (min-height: 800px) {
+  .responsive-pt {
+    padding-top: 7.5rem;
+    /* pt-30 */
+  }
+}
+
+@media (min-height: 900px) {
+  .responsive-pt {
+    padding-top: 10rem;
+    /* pt-40 */
+  }
+}
+
+@media (min-height: 1000px) {
+  .responsive-pt {
+    padding-top: 12.5rem;
+    /* pt-50 */
+  }
+}
+
+
 @layer base {
   body {
     @apply bg-[#ecf0f3] text-[#1f2937] tracking-wide

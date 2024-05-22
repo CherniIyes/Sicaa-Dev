@@ -43,7 +43,7 @@ const Footer = () => {
               <h2 className="mb-6 text-sm font-semibold text-black-500 uppercase">Contact</h2>
               <ul className="text-gray-500 font-medium">
                 <li className="mb-4 flex items-center">
-                  <FaEnvelope className="mr-2 text-gray-800" />
+                  <AiOutlineMail  className="mr-2 text-gray-800" />
                   <a href="mailto:siccadev@gmail.com" className="hover:underline">siccadev@gmail.com</a>
                 </li>
                 <li className="flex items-center">
@@ -65,7 +65,8 @@ const Footer = () => {
               <FaInstagram size={24} />
             </a>
             <a href="mailto:siccadev@gmail.com" className="text-gray-800 hover:text-black-500 ease-in-out duration-300">
-              <AiOutlineMail size={24}/>
+              <FaEnvelope size={24} />
+
             </a>
             <a href="https://www.linkedin.com/in/sicca-dev-a6a952307/" className="text-gray-800 hover:text-black-500 ease-in-out duration-300">
               <FaLinkedin size={24} />

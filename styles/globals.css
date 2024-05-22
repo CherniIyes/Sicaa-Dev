@@ -47,7 +47,7 @@ body {
 
 @media (min-height: 700px) {
   .responsive-pt {
-    padding-top: 6rem;
+    padding-top: 1rem;
     /* pt-20 */
   }
 }

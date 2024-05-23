@@ -16,7 +16,7 @@ const Experties = () => {
           <div className="w-1/3 ">
             {/* JOB TITLE */}
             <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
-              Senior JavaScript Developers
+              Junior JavaScript Developers
             </div>
             {/* JOB DESC */}
             <div className="p-3 text-sm italic">
@@ -69,7 +69,7 @@ const Experties = () => {
           <div className="w-1/3 ">
             {/* JOB TITLE */}
             <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
-              Senior Next.js Developers
+            Junior Next.js Developers
             </div>
             {/* JOB DESC */}
             <div className="p-3 text-sm italic">
@@ -78,7 +78,7 @@ const Experties = () => {
             </div>
             {/* JOB DATE */}
             <div className="p-3 text-red-400 text-sm font-semibold">
-              2024 - Present
+              2023 - Present
             </div>
             {/* JOB COMPANY */}
             <div className="p-1 rounded bg-white text-sm font-semibold w-fit">

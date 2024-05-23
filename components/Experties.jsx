@@ -69,7 +69,7 @@ const Experties = () => {
           <div className="w-1/3 ">
             {/* JOB TITLE */}
             <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
-            Junior Next.js Developers
+              Junior Next.js Developers
             </div>
             {/* JOB DESC */}
             <div className="p-3 text-sm italic">
@@ -96,7 +96,7 @@ const Experties = () => {
           <div className="w-1/3 ">
             {/* JOB TITLE */}
             <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
-              React Native Developers
+              Junior React Native Developers
             </div>
             {/* JOB DESC */}
             <div className="p-3 text-sm italic">

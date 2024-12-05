@@ -43,8 +43,8 @@ const Home = () => {
 
       <Experties />
       <Info />
-      <Projects />
-      <Resume />
+      {/* <Projects />   */}
+      {/* <Resume /> */}
       <Footer />
     </div>
   );

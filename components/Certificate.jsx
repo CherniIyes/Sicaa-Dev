@@ -21,9 +21,9 @@ const ResumeDownload = () => {
 
   return (
     <div className="flex flex-col items-center justify-center p-5 bg-white min-h-screen" id="Certificate">
-    <h1 className="text-4xl font-extrabold mb-8 text-gray-900 leading-tight">
-  Explore Our Talent Pool
-</h1>
+      <h1 className="text-4xl font-extrabold mb-8 text-gray-900 leading-tight">
+        Explore Our Talent Pool
+      </h1>
       <div className="w-full max-w-xl">
         {resumes.map((resume, index) => (
           <div key={index} className="bg-white p-5 rounded-lg shadow-lg mb-5 transition-transform transform hover:-translate-y-1 hover:shadow-xl">
